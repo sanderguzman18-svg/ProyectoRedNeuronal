@@ -2,7 +2,7 @@ import csv
 import serial
 
 # --- Configuración ---
-PUERTO = "COM3"  # En Windows (ej. COM3). En Linux/Mac usa algo como '/dev/ttyUSB0'
+PUERTO = "COM8"  # En Windows (ej. COM3). En Linux/Mac usa algo como '/dev/ttyUSB0'
 BAUDIOS = 9600
 ARCHIVO_CSV = "datos_serial.csv"
 
