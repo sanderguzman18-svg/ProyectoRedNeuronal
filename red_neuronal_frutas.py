@@ -11,9 +11,11 @@ model = Sequential(
      Dense(3, input_shape=(3,), activation ='softmax')
      ])
 
+#Genera la configuración del modelo (funcion de aprendizaje o como saca los pesos y bias, perdida, y parametros a observar)
 model.compile(
     optimizer='adam',
     loss='categorical_crossentropy',
     metrics=['accuracy'])
 
+#Muestra un resumen del modelo en la terminal (cantidad de parametros como bias y pesos, además de cantidad de capas, neuronas, etc)
 model.summary()
