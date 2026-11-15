@@ -1,9 +1,9 @@
 
 #include <eml_net.h>
-static const float modelo_frutas_layer_0_biases[8] = { -0.079922f, 0.000000f, -0.092758f, 0.298244f, 0.006979f, 0.000000f, -0.299031f, -0.048692f };
-static const float modelo_frutas_layer_0_weights[24] = { -0.601667f, -0.333485f, 0.431607f, 0.305283f, 0.768106f, -0.457698f, 0.595265f, 0.054028f, 0.466558f, -0.387498f, -0.393478f, 0.584090f, 0.510322f, -0.109894f, -0.751388f, -0.386472f, 0.430039f, 0.336608f, -0.813752f, -1.272974f, 0.412503f, 0.084145f, 0.942120f, -0.678888f };
-static const float modelo_frutas_layer_1_biases[3] = { -0.263403f, 0.139783f, 0.337105f };
-static const float modelo_frutas_layer_1_weights[24] = { -0.104262f, 0.333209f, -0.362734f, 0.294736f, -0.278412f, 0.122306f, 0.369173f, 0.452685f, -1.624789f, -0.996527f, 0.110094f, -0.162090f, 0.506303f, 0.406962f, 0.777475f, 0.025136f, 0.603313f, -0.610662f, 1.083577f, -0.002957f, -0.295776f, -0.239506f, 0.600204f, -0.666800f };
+static const float modelo_frutas_layer_0_biases[8] = { 0.000000f, -0.017721f, 0.016248f, -0.051157f, 0.000000f, 0.000000f, 0.000000f, 0.437577f };
+static const float modelo_frutas_layer_0_weights[24] = { -0.665408f, 0.377959f, 0.075990f, 0.690256f, -0.102201f, -0.610155f, 0.010610f, -0.262039f, -0.275172f, 0.686373f, 0.884925f, -0.512075f, -0.510542f, -0.601128f, -0.721441f, 0.797477f, -0.281681f, -1.584662f, -1.824871f, 0.473738f, 0.099565f, -0.218633f, 0.357551f, 1.327554f };
+static const float modelo_frutas_layer_1_biases[3] = { 0.150279f, -0.006838f, -0.064750f };
+static const float modelo_frutas_layer_1_weights[24] = { 0.591415f, -0.672264f, -0.375629f, -0.534154f, -0.104421f, -0.783861f, -0.207511f, 0.876483f, -0.386927f, 0.017990f, -0.954205f, 0.019471f, 0.485377f, 0.688639f, 0.435442f, 0.732441f, -0.408251f, -0.403233f, -0.343688f, -0.236398f, 0.555023f, -0.506615f, -0.304139f, 0.998184f };
 static float modelo_frutas_buf1[8];
 static float modelo_frutas_buf2[8];
 static const EmlNetLayer modelo_frutas_layers[2] = { 
