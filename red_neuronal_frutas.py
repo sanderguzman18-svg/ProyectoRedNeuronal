@@ -21,9 +21,9 @@ X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=42, stratify=y
 )
 
-# Modelo de red neuronal con 2 capas, una con 3 entradas (R, G, B) y otra densa de 2 perceptrones, uno por fruta
+# Modelo de red neuronal con 2 capas, una con 3 entradas (R, G, B) y otra densa de 2 perceptrones, uno por fruta y otro para la nada
 model = Sequential([
-    Dense(2, input_shape=(3,), activation='softmax')
+    Dense(3, input_shape=(3,), activation='softmax')
 ])
 
 # Configuración de la red neuronal
