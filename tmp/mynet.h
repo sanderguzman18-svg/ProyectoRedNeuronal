@@ -1,11 +1,11 @@
 
 #include <eml_net.h>
-static const float mynet_layer_0_biases[2] = { 0.251788f, -0.251788f };
-static const float mynet_layer_0_weights[6] = { 1.151868f, 0.710759f, -0.510850f, 0.868443f, 0.418403f, -0.267507f };
+static const float mynet_layer_0_biases[3] = { -0.492986f, 0.296325f, 0.640261f };
+static const float mynet_layer_0_weights[9] = { -0.120554f, -0.356811f, -0.719832f, -0.968889f, 0.116829f, 0.114619f, 0.730835f, -1.883854f, 1.125427f };
 static float mynet_buf1[3];
 static float mynet_buf2[3];
 static const EmlNetLayer mynet_layers[1] = { 
-{ 2, 3, mynet_layer_0_weights, mynet_layer_0_biases, EmlNetActivationSoftmax } };
+{ 3, 3, mynet_layer_0_weights, mynet_layer_0_biases, EmlNetActivationSoftmax } };
 static EmlNet mynet = { 1, mynet_layers, mynet_buf1, mynet_buf2, 3 };
 
     int32_t

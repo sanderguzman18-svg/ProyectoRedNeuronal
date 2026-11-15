@@ -51,11 +51,11 @@ loss, accuracy = model.evaluate(X_test, y_test, verbose=0)
 print(f"\nPrecisión en prueba: {accuracy * 100:.2f}%")
 
 # Prueba con un dato
-nombres_frutas = ['MANZANA', 'PERA']
+nombres_frutas = ['MANZANA', 'PERA', 'SIN FRUTA']
 muestra = np.array([[41, 22, 2]], dtype='float32')
 prediccion = model.predict(muestra, verbose=0)
 indice_ganador = np.argmax(prediccion)
-print(f"Predicción para [52, 14, 3]: {nombres_frutas[indice_ganador]} ({prediccion[0]})")
+print(f"Predicción para [41, 22, 2]: {nombres_frutas[indice_ganador]} ({prediccion[0]})")
 
 # Guardar modelo
 model.save('modelo_frutas.keras')
